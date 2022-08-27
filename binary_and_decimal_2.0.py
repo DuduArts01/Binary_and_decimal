@@ -31,7 +31,7 @@ while True:
         if (e == "N") or (e == "Y"):
             break
         elif (e != "Y") or (e != "N"):
-            print("\nyou did not say [S/N], enter one of the options\n")
+            print("\nyou did not say [Y/N], enter one of the options\n")
     if (e == "N"):
         break
 
