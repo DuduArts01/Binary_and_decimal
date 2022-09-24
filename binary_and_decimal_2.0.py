@@ -8,6 +8,21 @@ def bi_to_dec(b):
     dec = sum(n)  # sum list of n
     return dec
 
+def dec_to_bi(dec):
+    n = []
+
+    while dec // 2 != 0:
+        r = dec % 2
+        n.append(r)        
+        dec = dec // 2
+        if (dec // 2 == 0):
+            n.append(1)        
+    bi = list(reversed(n))
+    print(bi)
+    
+    return bi
+    
+
 while True:
 
     while True:
@@ -20,8 +35,8 @@ while True:
             break
         if (choose == 2):
             d = int(input("Enter the number in decimal: "))
-            bi = bin(d)
-            print(f"\n{d} is in binary {bi[2:]}")
+            bi = dec_to_bi(d)
+            print(f"\n{d} is in binary {bi}")
             break
         elif (choose != "1") or (choose != "2"):
             print("\nYou didn't choose which option you want, try again")
