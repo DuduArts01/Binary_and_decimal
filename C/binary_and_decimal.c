@@ -49,14 +49,13 @@ void convert_from_decimal_to_binary(void) {
     while(quotient / 2 != 0) {      
       rest[i] = quotient % 2;      
       quotient /= 2;      
-      printf("%i", rest[i]);
+      
       i++;
       
     }
     i++;
     //When finish loop, the quotient = 0, so last rest is 1 
     rest[i] = 1;
-    printf("%i\n", rest[i]);
     
     //loop to invert the sequence of the remainder, so getting the correct form
     printf("1");
